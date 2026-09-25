@@ -20,7 +20,7 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await fetch("https://kprit-college-helpdesk.onrender.com/api/chat", {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/chat`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
